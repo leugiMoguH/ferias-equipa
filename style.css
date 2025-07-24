@@ -1,0 +1,124 @@
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Cores de férias */
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 90%;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5em;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.time-unit {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    min-width: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.time-unit:hover {
+    transform: translateY(-5px);
+}
+
+.time-unit p {
+    font-size: 0.8em;
+    margin-top: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.message {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #eee;
+}
+
+.gif-container {
+    margin-top: 20px;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .time-unit {
+        font-size: 1.8em;
+        padding: 15px 20px;
+        min-width: 80px;
+    }
+
+    .time-unit p {
+        font-size: 0.7em;
+    }
+
+    .message {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .time-unit {
+        font-size: 1.5em;
+        padding: 10px 15px;
+        min-width: 70px;
+    }
+
+    .time-unit p {
+        font-size: 0.6em;
+    }
+
+    .message {
+        font-size: 1em;
+    }
+}
