@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Defina a data e hora alvo para a próxima sexta-feira às 18h em Lisboa, Portugal (WEST/WET)
     // ATENÇÃO: Verifique o fuso horário correto para a data específica. Portugal utiliza WEST (UTC+1) no verão.
     // 25 de julho de 2025 é uma sexta-feira.
-    const vacationDate = new Date('July 25, 2025 18:00:00 GMT+0100'); // GMT+0100 para WEST (Lisboa no verão)
+    const vacationDate = new Date('September 01, 2025 18:00:00 GMT+0100'); // GMT+0100 para WEST (Lisboa no verão)
 
     const daysSpan = document.getElementById('days');
     const hoursSpan = document.getElementById('hours');
