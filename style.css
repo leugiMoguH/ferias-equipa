@@ -5,20 +5,35 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Cores de férias */
+    /* Remove o gradiente para que a imagem de fundo seja visível */
+    /* background: linear-gradient(to right, #6dd5ed, #2193b0); */ 
+    
     color: #fff;
     text-align: center;
     overflow: hidden;
+
+    /* --- PROPRIEDADES PARA A IMAGEM DE FUNDO --- */
+    background-image: url('nome-da-sua-imagem.jpg'); /* ATENÇÃO: SUBSTITUA 'nome-da-sua-imagem.jpg' pelo NOME EXATO do seu ficheiro de imagem! */
+    background-size: contain; /* Garante que a imagem se ajuste sem cortar, mantendo proporções */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center bottom; /* Centra horizontalmente e alinha à parte inferior */
+    background-attachment: fixed; /* Opcional: faz com que o fundo seja fixo ao rolar */
+
+    /* Garante que o body ocupa a altura e largura total para a imagem aparecer bem */
+    width: 100%;
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.4);
+    /* Aumenta a opacidade do fundo para o conteúdo se destacar melhor da imagem */
+    background-color: rgba(0, 0, 0, 0.65); /* Ajustado de 0.4 para 0.65 */
     padding: 40px 30px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     max-width: 90%;
+    z-index: 1; /* Garante que o conteúdo está acima da imagem de fundo */
+    position: relative; /* Necessário para z-index */
 }
 
 h1 {
