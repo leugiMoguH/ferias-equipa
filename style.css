@@ -13,7 +13,7 @@ body {
     overflow: hidden;
 
     /* --- PROPRIEDADES PARA A IMAGEM DE FUNDO --- */
-    background-image: url('nome-da-sua-imagem.jpg'); /* ATENÇÃO: SUBSTITUA 'nome-da-sua-imagem.jpg' pelo NOME EXATO do seu ficheiro de imagem! */
+    background-image: url('fundo-ferias.jpeg'); /* ATENÇÃO: SUBSTITUA 'nome-da-sua-imagem.jpg' pelo NOME EXATO do seu ficheiro de imagem! */
     background-size: contain; /* Garante que a imagem se ajuste sem cortar, mantendo proporções */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-position: center bottom; /* Centra horizontalmente e alinha à parte inferior */
